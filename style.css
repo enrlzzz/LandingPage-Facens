@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body {
+    display: flex;
+    background-color: rgb(34, 78, 161);
+    background-size: 100%;
+    background-position: center;
+    background-position: center;
+}
+.sidebar {
+    width: 250px;
+    background-position: center;
+    background-size: 260%;
+    color: white;
+    height: 100vh;
+    padding: 20px;
+}
+
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #2c3e50;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar:hover {
+    background-color: #32225c;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+    transform: scale(1.02);
+}
+
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #1a1818;
+    padding: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    padding: 15px;
+    color: #ecf0f1;
+    font-size: 18px;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.sidebar li:hover {
+    background: linear-gradient(90deg, #3498db, #8e44ad);
+    color: #fff;
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+}
+
+
+.sidebar h2 {
+    margin-bottom: 20px;
+}
+.sidebar ul {
+    list-style: none;
+}
+.sidebar ul li {
+    margin: 15px 0;
+}
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+}
+.main-content {
+    flex: 1;
+    padding: 20px;
+}
+.header {
+    color: white;
+    text-align: justify;
+    margin: 70px;
+    padding: 50px;
+    font-family: Arial Black;
+    font-size: 50px;
+}
+
+h1 {
+    font-size: 35px;
+    color: #000000;
+    background: linear-gradient(90deg, #0ee2e2, #3edf9c);
+    padding: 50px;
+    border-radius: 10px;
+    text-align: justify;
+    opacity: 0;
+    transform: translateX(-100px);
+    animation: slideIn 1s ease-out forwards;
+}
+
+/* Definição da animação */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
